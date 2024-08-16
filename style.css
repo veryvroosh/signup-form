@@ -12,13 +12,14 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Blender Pro Book", sans-serif;
+  font-size: 20px;
 }
 
 #container {
   display: flex;
 }
 
-#image-container {
+#image-cont {
   position: relative;
 }
 
@@ -50,7 +51,41 @@ body {
 
 }
 
-#form-container {
+#main-cont {
   width: 37vw;
   border: solid aqua 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#main-text-cont {
+  padding: 2rem;
+}
+
+#signup-text-cont {
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+}
+
+#form-cont {
+  height: 30vh;
+  width: auto;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border: solid red 3px;
+}
+
+#form-div {
+  width: 30vw;
+  height: 300px;
+  display: flex;
+  background-color: white;
 }
