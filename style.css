@@ -20,12 +20,19 @@ body {
 }
 
 #image-cont {
+  height: 100vh;
+  width: 35vw;
   position: relative;
+  overflow: hidden; /* Hide overflow to crop the image */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally if desired */
 }
 
 #bg {
-  width: auto;
-  height: 99.5vh;
+  height: 100%; /* Fill the container height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
 }
 
 #logo-div {
@@ -83,9 +90,35 @@ p {
   border: solid red 3px;
 }
 
-#form-div {
+form {
   width: 30vw;
-  height: 300px;
+  height: 230px;
   display: flex;
-  background-color: white;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  background-color: #000000;
+  text-transform: uppercase;
+}
+
+.input-div {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+input {
+  height: 20px;
+  width: 200px;
+  margin-right: 3rem;
+  font-family: inherit;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+button {
+  height: 30px;
+  width: 100px;
+  margin-top: 2rem;
 }
